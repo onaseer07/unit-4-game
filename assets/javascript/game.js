@@ -111,7 +111,7 @@ function reset(){
   $("#playerNum").html("Your Total Score: " + "<span class = badge>" + playerScore +"</span>"); 
 }
  $("#title").text("Crystal Collectors!");
- $("#rules").html("<b>RULES:</b> <br>You will be given a random number at the start of the game.<br> Ther are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<br> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br> The value of each crystal is hidden from you until you click on it. <br> Each time when the game starts, the game will change the values of each crystal.");
+ $("#rules").html("<b>RULES:</b> <br>You will be given a random number at the start of the game.<br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<br> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br> The value of each crystal is hidden from you until you click on it. <br> Each time when the game starts, the game will change the values of each crystal.");
  $("#randomNum").html("Target Number: " + "<span class = badge>"+target+"<span>");
  $("#scoreboard").html("<span class = badge> Wins: " +  + wins +"<span>" + "  |  " + "Losses: " + losses + "</span>");  
  $("#playerNum").html("Your Total Score: " + "<span class = badge>" + playerScore +"</span>"); 
