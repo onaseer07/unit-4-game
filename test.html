@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get the sum of the numbers in the array.</p>
+<button onclick="myFunction()">Try it</button>
+
+<p>Sum of numbers in array: <span id="demo"></span></p>
+
+<script>
+ let randomNum = function getRandomNum (min,max) {
+   return Math.floor(Math.random() * (max-min +1) ) + min;
+ }
+
+var numbers = [parseInt(randomNum(1,12)),parseInt(randomNum(1,12)),parseInt(randomNum(1,12)),parseInt(randomNum(1,12))];
+
+function getSum(total, num) {
+    return total + num;
+}
+var playerScoreArray = [];
+playerScoreArray.push(numbers);
+
+document.getElementById("demo").innerHTML = numbers + " Sum: " + parseInt(playerScoreArray.reduce(getSum));
+
+</script>
+
+</body>
+</html>
