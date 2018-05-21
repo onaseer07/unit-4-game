@@ -45,7 +45,7 @@
     $("#0").click(function(){
         playerScore += crystalValue[0];
         //alert("New Score: " + playerScore);
-        $("#playerNum").html("Your Total Score: " + playerScore);
+        $("#playerNum").html("Your Total Score: " + "<span class = badge>" + playerScore +"</span>"); 
         if (playerScore > target) {
           alert("You Lost!");
           losses++;
@@ -60,7 +60,7 @@
     $("#1").click(function(){
         playerScore += crystalValue[1];
         //alert("New Score: " + playerScore);
-        $("#playerNum").html("Your Total Score: " + playerScore);
+        $("#playerNum").html("Your Total Score: " + "<span class = badge>" + playerScore +"</span>"); 
         if (playerScore > target) {
           alert("You Lost!");
           losses++;
@@ -75,7 +75,7 @@
     $("#2").click(function(){
         playerScore += crystalValue[2];
         //alert("New Score: " + playerScore);
-        $("#playerNum").html("Your Total Score: " + playerScore);
+        $("#playerNum").html("Your Total Score: " + "<span class = badge>" + playerScore +"</span>"); 
         if (playerScore > target) {
           alert("You Lost!");
           losses++;
@@ -90,7 +90,7 @@
     $("#3").click(function(){
         playerScore += crystalValue[3];
         //alert("New Score: " + playerScore);
-        $("#playerNum").html("Your Total Score: " + playerScore);
+        $("#playerNum").html("Your Total Score: " + "<span class = badge>" + playerScore +"</span>"); 
         if (playerScore > target) {
           alert("You Lost!");
           losses++;
@@ -106,7 +106,7 @@ function reset(){
   crystalValue = [randomNum(1,12),randomNum(1,12),randomNum(1,12),randomNum(1,12)];
   playerScore = 0;
   target = Math.floor(Math.random() * (120-19 +1) ) + 19;
-  $("#randomNum").html("Target Number: " + target);
+  $("#randomNum").html("Target Number: " + "<span class = badge>"+target+"<span>");
   $("#scoreboard").html("<span class = badge> Wins: " +  + wins +"<span>" + "  |  " + "Losses: " + "<span class = badge>" + losses + "</span>"); 
   $("#playerNum").html("Your Total Score: " + "<span class = badge>" + playerScore +"</span>"); 
 }
